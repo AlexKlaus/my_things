@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="burger" id='burger'><span class="burger-line"></span></div>
-    
+
     <script>
 
         function burgerToTreangle() {
-            burger.style.setProperty('--middle-line', 'translateY(15px)')
-            burger.style.setProperty('--top-line', 'rotate(-60deg) translate(2px, -19px)')
-            burger.style.setProperty('--bottom-line', 'rotate(60deg) translate(-28px, -34px)')
+            burger.style.setProperty('--middle-line', 'translateY(15px)');
+            burger.style.setProperty('--top-line', 'rotate(-60deg) translate(2px, -19px)');
+            burger.style.setProperty('--bottom-line', 'rotate(60deg) translate(-28px, -34px)');
         }
 
         function treangleToBurger() {
-            burger.style.setProperty('--middle-line', 'translateY(0px)')
-            burger.style.setProperty('--top-line', 'rotate(0deg) translate(0px, 0px)')
-            burger.style.setProperty('--bottom-line', 'rotate(0deg) translate(0px, 0px)')
+            burger.style.setProperty('--middle-line', 'translateY(0px)');
+            burger.style.setProperty('--top-line', 'rotate(0deg) translate(0px, 0px)');
+            burger.style.setProperty('--bottom-line', 'rotate(0deg) translate(0px, 0px)');
         }
 
         function animateBurger() {
@@ -38,4 +40,5 @@
         burger.addEventListener('click', () => animateBurger());
     </script>
 </body>
+
 </html>
