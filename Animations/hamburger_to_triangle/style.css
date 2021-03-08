@@ -8,12 +8,13 @@
     left: 34px;
     transition: 1s;
     z-index: 1;
-    --burger-color: red;
+    --burger-color: orange;
+    --line-hight: 7px;
 }
 .burger-line {
     content: '';
     display: block;
-    height: 7px;
+    height: var(--line-hight);
     width: 100%;
     background-color: var(--burger-color);
     transition: 1s;
@@ -23,8 +24,8 @@
 .burger-line::before {
     content: '';
     display: block;
-    height: 7px; 
-    width: 67px;
+    height: var(--line-hight); 
+    width: 100%;
     background-color: var(--burger-color);
     position: relative;
     top: -15px;
@@ -35,8 +36,8 @@
 .burger-line::after {
     content: '';
     display: block;
-    height: 7px; 
-    width: 67px;
+    height: var(--line-hight); 
+    width: 100%;
     position: relative;
     top: 8px;
     background-color: var(--burger-color);

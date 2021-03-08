@@ -13,15 +13,15 @@
     <script>
 
         function burgerToTreangle() {
-            setTimeout(() => (burger.style.setProperty('--middle-line', 'translateY(15px)')), 300);
-            setTimeout(() => (burger.style.setProperty('--top-line', 'rotate(-60deg) translate(2px, -19px)')), 300);
-            setTimeout(() => (burger.style.setProperty('--bottom-line', 'rotate(60deg) translate(-28px, -34px)')), 300);
+            burger.style.setProperty('--middle-line', 'translateY(15px)')
+            burger.style.setProperty('--top-line', 'rotate(-60deg) translate(2px, -19px)')
+            burger.style.setProperty('--bottom-line', 'rotate(60deg) translate(-28px, -34px)')
         }
 
         function treangleToBurger() {
-            setTimeout(() => (burger.style.setProperty('--middle-line', 'translateY(0px)')), 300);
-            setTimeout(() => (burger.style.setProperty('--top-line', 'rotate(0deg) translate(0px, 0px)')), 300);
-            setTimeout(() => (burger.style.setProperty('--bottom-line', 'rotate(0deg) translate(0px, 0px)')), 300);
+            burger.style.setProperty('--middle-line', 'translateY(0px)')
+            burger.style.setProperty('--top-line', 'rotate(0deg) translate(0px, 0px)')
+            burger.style.setProperty('--bottom-line', 'rotate(0deg) translate(0px, 0px)')
         }
 
         function animateBurger() {
